@@ -1,0 +1,417 @@
+/* FONTS */
+@font-face{
+    font-family: 'josefinsans';
+    src: url(JosefinSans-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: 'playwrite';
+    src: url(PlaywriteMXGuides-Regular.ttf);
+}
+@font-face{
+    font-family: 'aclonica';
+    src: url(Aclonica-Regular.ttf);
+}
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* MAIN */
+html, body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.7em;
+}
+a{
+    padding: 10px 10px;
+    color: rgba(22, 22, 22, 0.255);
+    text-decoration: none;
+}
+
+p{
+    margin: 10 0;
+}
+
+section{
+    padding-top: 70px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+}
+
+h1,h2,h3{
+    font-size: 2vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'aclonica';
+}
+.colored{
+    color: #e4376d;
+}
+/* NAVBAR */
+#navbar{
+    color: #fff;  
+    background-color: #a881e2c6;
+    display: flex;
+    justify-content: space-between; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    letter-spacing: 4px;
+}
+/*LOGO*/
+#navbar .logo{
+    padding: 20px ;
+    transition: transform 0.5s ease, color 0.5s ease;
+    font-family: 'playwrite';
+}
+#navbar .logo :hover{
+    color: #e4376d;
+}
+
+#navbar a{
+    color: #fff;
+    overflow: auto;
+    transition: transform 0.5s ease;
+}
+/*PAGE LINKS*/
+#navbar ul{
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navbar li a{
+    color: #fff;
+    overflow: auto;
+    transition: transform 0.5s ease,color 0.5s ease;
+}
+
+#navbar li a:hover{
+    transform: scale(1.5);
+    color: #000;
+
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#navbar li{
+    font-size: larger;
+    padding: 0 20px;
+    transition: transform 0.5s ease, color 0.5s ease;
+    
+}
+
+#navbar li:hover,#navbar li a.current{
+    transform: scale(1.5);
+    color: #000;
+
+}
+/*RESERVE BUTTON*/
+#navbar #reserve{
+    padding: 20px;
+    font-size:large;
+    font-weight: bold;
+    border: solid 1px #333;
+    background-color: #e4376d;
+    border-width: 0;
+    border-radius:20px;
+    margin-right: 20px;
+    padding: 12px 20px; 
+    height: auto;
+    display: inline-block;
+    line-height: normal;
+    transition: color 0.5s ease;
+}
+#navbar #reserve:hover{
+    color: #000;
+}
+
+
+
+/*HOME-PAGE*/
+/* SHOWCASE */
+#showcase{
+    background: url(homepage-reception.jpg) no-repeat center center/cover;
+    height: 750px;
+}
+
+#showcase #showcase-content{
+    color:#fff;
+    text-align: center;
+    padding-top: 370px;
+}
+#showcase h1{
+    color: #e4376d;
+    font-size: 10vw;;
+    letter-spacing: 13px;
+    font-family: 'playwrite';
+
+}
+
+/*HOME-INFO*/
+#home-info #info-img{
+    background: url(hotel-lounge-bar.jpg)no-repeat right center/cover;
+    width: 40%;
+    height: 600px;
+}
+#home-info #info-text{
+    text-align: center;
+    width: 60%;
+    padding-right: 50px;
+}
+#home-info #info-text h1{
+    padding-top: 50px;
+    font-size: 2.5vw;
+}
+
+#home-page-food {
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/*HOME-CLIENTS*/
+#home-clients{
+    margin-top: 200px;
+    margin-left: 20%;
+}
+#home-clients #woman-balcony{
+    background: url(woman-balcony.jpg)no-repeat center center/cover;
+    width: 500px;
+    height: 600px;
+}
+#home-clients #woman-room{
+    background: url(woman-room.jpeg)no-repeat center center/cover;
+    width: 500px;
+    height: 600px;
+}
+
+
+
+/*HOME-FOOD*/
+#home-eAd{
+    margin-left: 30%;
+    margin-top: 200px;
+}
+#home-page-food #home-cake{
+    background: url(home-cake.jpg)no-repeat center center/cover;
+    width: 300px;
+    height: 300px;
+}
+#home-page-food #home-drink{
+    background: url(home-drink.jpg)no-repeat center center/cover;
+    width: 300px;
+    height: 300px;
+}
+
+#home-page-food #home-food{
+    background: url(home-food.png)no-repeat center center/cover;
+    width: 300px;
+    height: 300px;
+}
+
+/*PRESENTATION-PAGES*/
+.presenation-pages{
+    display: flex;
+}
+.presenation-body{
+    background-color: #212121;
+    color: #fff;
+}
+
+
+/*ROOMS-PAGE*/
+/*room1*/
+.rooms-info{
+    margin-top: 200px;
+}
+#room1-img{
+    background: url(room-cool.jpg)no-repeat center center/cover;
+    width:3000px;
+    height: 650px;
+}
+#room2-img{
+    background: url(room-cool-view.jpg)no-repeat center center/cover;
+    width:3000px;
+    height: 650px;
+}
+#room3-img{
+    background: url(room-fantasy.jpg)no-repeat center center/cover;
+    width:3000px;
+    height: 650px;
+}
+#room4-img{
+    background: url(room-twin-bed.jpg)no-repeat center center/cover;
+    width:3000px;
+    height: 650px;
+}
+#room5-img{
+    background: url(room-wood-wall.jpg)no-repeat center center/cover;
+    width:3000px;
+    height: 650px;
+}
+
+/*FOOD-PAGE*/
+/*restaurant*/
+.food-page-info{
+    margin-top: 200px;
+}
+#restaurant #hotel-restaurant{
+    background: url(hotel-restaurant.jpg)no-repeat center center/cover;
+    width:3000px;
+    height: 650px;
+}
+/*bar*/
+#bar #hotel-bar{
+    background: url(hotel-bar.jpg)no-repeat center center/cover;
+    width:3000px;
+    height: 650px;
+}
+/*pool-bar*/
+#pool-bar #hotel-pool-bar{
+    background: url(pool-bar.jpg)no-repeat center center/cover;
+    width:3000px;
+    height: 650px;
+}
+
+/*ACTIVITIES-PAGE*/
+/*pool*/
+.activities-info{
+    margin-top: 200px;
+}
+#pool #hotel-pool{
+    background: url(hotel-pool.jpg)no-repeat center center/cover;
+    width:3000px;
+    height: 650px;
+}
+/*games-room*/
+#games-room #hotel-games{
+    background: url(hotel-games.jpg)no-repeat center center/cover;
+    width:3000px;
+    height: 650px;
+}
+/*gym*/
+#gym #hotel-gym{
+    background: url(hotel-gym.jpg)no-repeat center center/cover;
+    width:3000px;
+    height: 650px;
+}
+
+
+
+
+
+/*RESERVE-PAGE*/
+#navbar #current-reserve{
+    padding: 20px;
+    font-size:large;
+    font-weight: bold;
+    border: solid 1px #333;
+    background-color: #333;
+    border-width: 0;
+    border-radius:20px;
+    margin-right: 20px;
+    padding: 12px 20px; 
+    height: auto;
+    display: inline-block;
+    line-height: normal;
+    transition: color 0.5s ease;
+}
+#navbar #current-reserve:hover{
+    color: #e4376d;
+}
+/*period*/
+#period{
+    text-align: center;
+    color: #000;
+    padding: 20px 20px;
+    border: #000 solid 1px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-right: 50px;
+    margin-top: 50px;
+    width: 20%;
+    height: 150px;
+    font-family: 'aclonica';
+}
+/*clinet-info and rooms"*/
+#clinet-info{
+    color: #000;
+    padding: 20px 20px;
+    border: #000 solid 1px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 50px;
+    width: 90%;
+}
+/*rooms*/
+.rooms{
+    display: flex;
+    margin-top: 10px;
+}
+.rooms h4{
+    margin-top: 20px;
+    font-family: 'aclonica';
+    color: #e4376d;
+    font-size: 25px;
+}
+.rooms .reserve-room-info{
+    width: 65%;
+    margin-left: 10px;
+}
+.rooms #room1-img{
+    background: url(room-cool.jpg)no-repeat center center/cover;
+    height: 150px;
+    width: 250px;
+}
+.rooms #room2-img{
+    background: url(room-cool-view.jpg)no-repeat center center/cover;
+    height: 150px;
+    width: 250px;
+}
+.rooms #room3-img{
+    background: url(room-fantasy.jpg)no-repeat center center/cover;
+    height: 150px;
+    width: 250px;
+}
+.rooms #room4-img{
+    background: url(room-twin-bed.jpg)no-repeat center center/cover;
+    height: 150px;
+    width: 250px;
+}
+.rooms #room5-img{
+    background: url(room-wood-wall.jpg)no-repeat center center/cover;
+    height: 150px;
+    width: 250px;
+}
+/*buttons*/
+#buttons #reset,
+#buttons #submit{
+    padding: 5px 5px;
+}
+
+
+/*PAGE BUTTOM*/
+#page-bottom{
+    background-color: #a881e2c6;
+    height: 400px;
+    width: 100%;
+}
+#page-bottom h1{
+    text-align: center;
+    font-family: 'playwrite';
+    color: #e4376d;
+    font-size: 7vw;
+    padding-top: 200px;
+}
+

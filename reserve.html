@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="presenation-body">
+    <form method="post" onsubmit="return reserve()">
+        <header >
+            <nav id="navbar">            
+                <h2 class="logo"><a href="homepage.html">The Continental</a></h2>
+                <ul class="content">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                </ul>
+                <a href="reserve.html" id="current-reserve">RESERVE</a>
+            </nav>
+        </header>
+            <section>
+                <div id="period">
+                    <div>
+                        <p><span class="colored">First</span> Day :</p>
+                        <input type="date" name="fday" id="fday">
+                    </div>
+                        
+                    <div>
+                        <p><span class="colored">Last</span> Day :</p>
+                        <input type="date" name="lday" id="lday">
+                    </div>
+                </div>
+                <div id="clinet-info">                
+                    <div>
+                        <label for=""><span class="colored">Lname</span> :</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                    <div>
+                        <label for=""><span class="colored">Fname</span> :</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    <div>
+                        <label for=""><span class="colored">Mail</span> adress :</label>
+                        <input type="text" name="mail" id="mail">
+                    </div>                    
+                    <div class="avail-rooms">
+                        <div class="rooms">
+                            <div id="room1-img"></div>
+                            <div class="reserve-room-info">
+                                <h4>The <span class="colored">Botanical</span> Loft</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id quis ab possimus ea doloribus?</p>
+                                <hr>
+                                <input type="checkbox" id="room1"> Reserve
+                            </div>
+                        </div>
+                        <div class="rooms">
+                            <div id="room2-img"></div>
+                            <div class="reserve-room-info">
+                                <h4> <span class="colored">Monarch</span> View Suite</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas aliquam laboriosam odio sapiente. Accusantium obcaecati fuga exercitationem odio reprehenderit laborum quos nam, quia blanditiis nisi ratione nesciunt? Hic, rerum maiores.   </p>
+                                <hr>
+                                <input type="checkbox" id="room2"> Reserve
+                            </div>
+                        </div>
+                        <div class="rooms">
+                            <div id="room3-img"></div>
+                            <div class="reserve-room-info">
+                                <h4>Fantasy Luxe <span class="colored">Suite</span> </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates saepe animi rem quae unde quibusdam ad dolore? Nostrum quam consectetur culpa, pariatur impedit excepturi autem?</p>
+                                <hr>                                
+                                <input type="checkbox" id="room3"> Reserve                          
+                            </div> 
+                        </div>
+                        <div class="rooms">
+                            <div id="room4-img"></div>
+                            <div class="reserve-room-info">
+                                <h4> <span class="colored">Golden</span> Twin Retreat</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae assumenda non aut ipsum ab quas! Soluta ullam impedit enim molestiae nulla officiis, ducimus ut minima totam.</p>
+                                <hr>                                
+                                <input type="checkbox" id="room4"> Reserve
+                                
+                            </div>
+                        </div>
+                        <div class="rooms">
+                            <div id="room5-img"></div>
+                            <div class="reserve-room-info">
+                                <h4> Modern <span class="colored">Serenity</span> Suite</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat totam neque vero molestiae rem libero dolorem fuga quasi error voluptate dolore modi impedit harum doloremque, asperiores amet.</p>
+                                <hr>                                
+                                <input type="checkbox" id="room5"> Reserve                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="buttons">
+                        <input type="reset" name="reset" id="reset" value="reset">
+                        <input type="submit" name="submit" id="submit" value="reserve">
+                    </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div id="page-bottom">
+                <h1 id="bottom-logo">The Continental</h1>
+            </div>
+        </footer>
+    
+    </form>
+    
+</body>
+</html>
