@@ -14,6 +14,31 @@ function alpha(ch){
 }
 
 function reserve(){
+    sys_date = new Date();
+    yy = sys_date.getFullYear();
+    mm = sys_date.getMonth();
+    dd = sys_date.getDate();
+
+    sysDate = new Date(yy, mm, dd);
+
+    fdayStr = document.getElementById('fday').value;
+    fday = new Date(fdayStr);
+    fyy = fday.getFullYear();
+    fmm = fday.getMonth();
+    fdd = fday.getDate();
+
+    firstDate = new Date(fyy, fmm, fdd);
+
+if (firstDate < sysDate) {
+    alert("First day invalid");
+    return false;
+}
+    lday=document.getElementById('lday').value;
+    if(lday<fday){
+        alert("invalide duration");
+        return false;
+    }
+
     ln=document.getElementById('lname').value;
     if(ln=='' || !alpha(ln)){
         alert("Last name invalid");
